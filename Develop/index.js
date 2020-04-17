@@ -2,8 +2,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
+const markDown = require(`./utils/generateMarkdown`);
 
 const questions = [
+    {
+        message: "What is the Repo Name?",
+        name: "reponame"
+    },
     {
         message: "Enter your GitHub username",
         name: "username"
@@ -45,18 +50,8 @@ const questions = [
 function init() {
 inquirer
   .prompt(questions)
-  .then(function(response) {
-      username = response.username
-      email = response.email
-      title = response.title
-      description = response.description
-      role = response.role
-      capability = response.capability
-      benefit = response.beneift
-      contributing = response.contributing
-      tests = response.tests
-
-
+  .then(function(data) {
+      
       const queryUrl = `https://api.github.com/users/${username}`;
       
       axios
@@ -82,8 +77,8 @@ inquirer
 }
 
 
-// function writeToFile(fileName, data) {
-// }
+function writeToFile(markDown, data) {
+}
 
 // function init() {
 
