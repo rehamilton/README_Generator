@@ -63,13 +63,13 @@ so that users can learn more about the application
 
 ## Video
 
-![video](./markDownAssets/video.mp4)
+![./markDownAssets/video.mp4](https://github.com/rehamilton/README_Generator/blob/master/markDownAssets/video.mp4)
 
 ## Walkthrough
 
 Below is a very quick runthrough of how the application works
 
-![markDownAssets/walkthrough.png](./markDownAssets/walkthrough.png)
+![./markDownAssets/walkthrough.png](https://github.com/rehamilton/README_Generator/blob/master/markDownAssets/walkthrough.PNG)
 
 ## Questions
 
