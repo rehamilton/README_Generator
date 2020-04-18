@@ -56,6 +56,6 @@
 
   ![License](https://img.shields.io/github/license/rehamilton/readme?style=flat-square)
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/rehamilton/readme
+  ![GitHub repo size](https://img.shields.io/github/repo-size/rehamilton/readme)
 
   

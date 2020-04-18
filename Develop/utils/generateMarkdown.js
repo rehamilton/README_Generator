@@ -57,7 +57,7 @@ function generateMarkdown(data) {
 
   ![License](https://img.shields.io/github/license/${data.username}/${data.reponame}?style=flat-square)
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.reponame}
+  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.reponame})
 
   `;
 }
