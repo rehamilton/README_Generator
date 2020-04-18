@@ -61,6 +61,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 function promptUser() {
     return inquirer
     .prompt(questions)
+    
 };
 
 
@@ -69,7 +70,18 @@ async function init() {
     try {
         const answers = await promptUser();
 
-        const readMe = markDown(answers);
+        const queryURL = `https://api.github.com/users/${answers.username}`;
+        const queryResponse = await axios.get(queryURL)
+        const avatarURL = queryResponse.data.avatar_url
+
+        const markdownData = {
+            avatar: avatarURL,
+            answers
+        }
+
+        console.log(markdownData);
+
+        const readMe = markDown(markdownData);
 
         await writeFileAsync("README.md", readMe);
 

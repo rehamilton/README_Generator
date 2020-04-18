@@ -1,11 +1,11 @@
 function generateMarkdown(data) {
   return `
 
-  # ${data.reponame}
+  # ${data.answers.reponame}
 
-  # ${data.title}
+  # ${data.answers.title}
 
-  ${data.description}
+  ${data.answers.description}
 
   ## Table of Contents
 
@@ -26,22 +26,22 @@ function generateMarkdown(data) {
   To install necessary dependencies, run the following command:
 
   ${"```"}
-  ${data.installation}
+  ${data.answers.installation}
   ${"```"}
 
   ## Usage
 
-  as a ${data.role}
-  I can ${data.capability}
-  so that ${data.benefit}
+  as a ${data.answers.role}
+  I can ${data.answers.capability}
+  so that ${data.answers.benefit}
 
   ## License
 
-  This project is licensed under the ${data.license} License
+  This project is licensed under the ${data.answers.license} License
 
   ## Contributing
 
-  ${data.contributing}
+  ${data.answers.contributing}
 
   ## Tests
 
@@ -55,9 +55,12 @@ function generateMarkdown(data) {
 
   If you have any questions about the repo, open an issue or contact ${data.username} on ${data.email}
 
-  ![License](https://img.shields.io/github/license/${data.username}/${data.reponame}?style=flat-square)
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.reponame})
+  <img src="${data.avatar}" alt="avatar" style="border-radius: 16px" width="30" />
+
+  ![License](https://img.shields.io/github/license/${data.answers.username}/${data.answers.reponame}?style=flat-square)
+
+  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.answers.username}/${data.answers.reponame})
 
   `;
 }
