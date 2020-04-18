@@ -31,9 +31,9 @@ function generateMarkdown(data) {
 
   ## Usage
 
-  as a ${data.answers.role}
-  I can ${data.answers.capability}
-  so that ${data.answers.benefit}
+  AS A ${data.answers.role}
+  I CAN ${data.answers.capability}
+  SO THAT ${data.answers.benefit}
 
   ## License
 

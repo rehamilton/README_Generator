@@ -30,9 +30,9 @@
 
   ## Usage
 
-  as a user
-  I can create a readme 
-  so that users can learn more about the application
+  AS A user
+  I CAN create a readme 
+  SO THAT users can learn more about the application
 
   ## License
 
