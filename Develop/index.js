@@ -23,11 +23,11 @@ const questions = [
         name: "title"
     },
     {
-        message: "Project Description",
+        message: "Provide a detialed description of teh project",
         name: "description"
     },
     {
-        message: "Installation Requirements",
+        message: "What needs to beinstalled to run the application?",
         name: "installation"
     },
     {
@@ -43,15 +43,15 @@ const questions = [
         name: "benefit"
     },
     {
-        message: "License",
+        message: "What license are you using?",
         name: "license"
     },
     {
-        message: "Contributing",
+        message: "What are the rules for contributing",
         name: "contributing"
     },
     {
-        message: "Tests",
+        message: "What is the test line command?",
         name: "tests"
     }
 ];
@@ -71,7 +71,7 @@ async function init() {
 
         const readMe = markDown(answers);
 
-        await writeFileAsync("example.md", readMe);
+        await writeFileAsync("README.md", readMe);
 
         console.log("README successfully created");
     } catch (err) {

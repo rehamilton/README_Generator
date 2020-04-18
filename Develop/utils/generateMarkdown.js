@@ -1,56 +1,65 @@
 function generateMarkdown(data) {
   return `
-# ${data.title}
 
-${data.description}
+  # ${data.reponame}
 
-## Table of Contents
+  # ${data.title}
 
-* [Installation](#installation)
+  ${data.description}
 
-* [Usage](#Usage)
+  ## Table of Contents
 
-* [License](#license)
+  * [Installation](#installation)
 
-* [Contributing](#contrbuting)
+  * [Usage](#Usage)
 
-* [Tests](#tests)
+  * [License](#license)
 
-* [Questions](#questions)
+  * [Contributing](#contrbuting)
 
-## Installation
+  * [Tests](#tests)
 
-To install necessary dependencies, run the following command:
+  * [Questions](#questions)
 
-${"```"}
-${data.installation}
-${"```"}
+  ## Installation
 
-## Usage
+  To install necessary dependencies, run the following command:
 
-as a ${data.role}
-I can ${data.capability}
-so that ${data.benefit}
+  ${"```"}
+  ${data.installation}
+  ${"```"}
 
-## License
+  ## Usage
 
-This project is licensed under the ${data.license} License
+  as a ${data.role}
+  I can ${data.capability}
+  so that ${data.benefit}
 
-## Contributing
+  ## License
 
-${data.contributing}
+  This project is licensed under the ${data.license} License
 
-## Tests
+  ## Contributing
 
-To run tests, run the following command:
+  ${data.contributing}
 
-${data.tests}
+  ## Tests
 
-## Questions
+  To run tests, run the following command:
 
-If you have any questions about the repo, open an issue or contact ${data.username} on ${data.email}
+  ${"```"}
+  ${data.tests}
+  ${"```"}
 
-`;
+  ## Questions
+
+  If you have any questions about the repo, open an issue or contact ${data.username} on ${data.email}
+
+  ![License](https://img.shields.io/github/license/${data.username}/${data.reponame}?style=flat-square)
+
+  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.reponame}
+
+  `;
 }
 
 module.exports = generateMarkdown;
