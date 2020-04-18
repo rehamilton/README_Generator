@@ -2,9 +2,9 @@
 
   # README_Generator
 
-  # ReadMe Generator
+  # Good ReadMe Generator
 
-  Create an application which creates a readme for a repo
+  create an application to create a readme using user input
 
   ## Table of Contents
 
@@ -31,8 +31,8 @@
   ## Usage
 
   as a user
-  I can create a readme
-  so that users can get mor information
+  I can create a readme 
+  so that users can learn more about the application
 
   ## License
 
@@ -40,19 +40,19 @@
 
   ## Contributing
 
-  none
+  no contributing please. It's all about me :)
 
   ## Tests
 
   To run tests, run the following command:
 
   ```
-  undefined
+  test 
   ```
 
   ## Questions
 
-  If you have any questions about the repo, open an issue or contact undefined on undefined
+  If you have any questions about the repo or want to open an issue contact rehamilton on roz_e4@hotmail.com
 
 
   <img src="https://avatars1.githubusercontent.com/u/59821631?v=4" alt="avatar" style="border-radius: 16px" width="30" />

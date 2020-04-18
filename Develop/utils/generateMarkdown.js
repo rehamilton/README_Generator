@@ -53,7 +53,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  If you have any questions about the repo, open an issue or contact ${data.username} on ${data.email}
+  If you have any questions about the repo or want to open an issue contact ${data.answers.username} on ${data.answers.email}
 
 
   <img src="${data.avatar}" alt="avatar" style="border-radius: 16px" width="30" />
