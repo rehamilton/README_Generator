@@ -6,7 +6,7 @@ An application was ccreated to generate a README file using user inputs.
 
 ## Table of Contents
 
-* [Acceptance_Criteria](#Acceptance Criteria)
+* [Criteria](#criteria)
 
 * [Installation](#installation)
 
@@ -14,13 +14,11 @@ An application was ccreated to generate a README file using user inputs.
 
 * [Videa](#video)
 
-* [Contributing](#contrbuting)
-
-* [Tests](#tests)
+* [Walkthrough](#walkthrough)
 
 * [Questions](#questions)
 
-## Acceptance Criteria
+## Criteria
 
 The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
 
@@ -67,17 +65,11 @@ so that users can learn more about the application
 
 ![video](./markDownAssets/video.mp4)
 
-## Contributing
+## Walkthrough
 
-no contributing please. It's all about me :)
+Below is a very quick runthrough of how the application works
 
-## Tests
-
-To run tests, run the following command:
-
-```
-none 
-```
+![markDownAssets/walkthrough.png](./markDownAssets/walkthrough.png)
 
 ## Questions
 
