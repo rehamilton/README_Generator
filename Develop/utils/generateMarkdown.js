@@ -48,7 +48,7 @@ function generateMarkdown(data) {
   To run tests, run the following command:
 
   ${"```"}
-  ${data.tests}
+  ${data.answers.tests}
   ${"```"}
 
   ## Questions

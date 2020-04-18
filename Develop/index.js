@@ -5,6 +5,7 @@ const axios = require("axios");
 const util = require("util")
 const markDown = require(`./utils/generateMarkdown`);
 
+//set questions for user
 const questions = [
     {
         message: "What is the Repo Name?",
@@ -23,11 +24,11 @@ const questions = [
         name: "title"
     },
     {
-        message: "Provide a detialed description of teh project",
+        message: "Provide a detialed description of the project",
         name: "description"
     },
     {
-        message: "What needs to beinstalled to run the application?",
+        message: "What needs to be installed to run the application?",
         name: "installation"
     },
     {
@@ -58,63 +59,47 @@ const questions = [
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+
+//prompt user using questions set
 function promptUser() {
     return inquirer
     .prompt(questions)
     
 };
 
-
+// main function that goes through questions and urls to send info to markdown file
 async function init() {
 
     try {
+        // name answers
         const answers = await promptUser();
 
+        //get the URL which is required for the user avatar
         const queryURL = `https://api.github.com/users/${answers.username}`;
         const queryResponse = await axios.get(queryURL)
+        //name the avatar URL
         const avatarURL = queryResponse.data.avatar_url
 
+        //take both the questions and the avatar and place in an object for use in the markdown
         const markdownData = {
             avatar: avatarURL,
             answers
         }
 
-        console.log(markdownData);
+        //console.log(markdownData);
 
+        //set file data
         const readMe = markDown(markdownData);
 
+        //write to file
         await writeFileAsync("README.md", readMe);
 
+        //notify user of success
         console.log("README successfully created");
     } catch (err) {
+        //notify user of error
         console.log(err);
     }
-}
-
-    // .then(function(data) {
-
-    //     const queryUrl = `https://api.github.com/users/${username}`;
-        
-    //     axios
-    //         .get(queryUrl)
-    //         .then(function (response){
-
-    //         const pictureURL = response.data.avatar_url
-            
-    //         console.log(pictureURL);
-    //         })      
-    //     })
-    //     .then(function(queryURL){
-    //         axios
-    //         .get(queryUrl)
-    //         .then(function (response){
-
-    //         const pictureURL = response.data.avatar_url
-            
-    //         console.log(pictureURL);
-    //         })   
-    //     })
-
-// }
+};
 
 init();

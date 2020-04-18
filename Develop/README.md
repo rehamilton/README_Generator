@@ -1,10 +1,10 @@
 
 
-  # ieuwg
+  # README_Generator
 
-  # fjrwbhofg
+  # ReadMe Generator
 
-  wrjgbhow
+  Create an application which creates a readme for a repo
 
   ## Table of Contents
 
@@ -25,22 +25,22 @@
   To install necessary dependencies, run the following command:
 
   ```
-  vbrgujqwo
+  npm install
   ```
 
   ## Usage
 
-  as a bveiroq
-  I can vneroq
-  so that beoq
+  as a user
+  I can create a readme
+  so that users can get mor information
 
   ## License
 
-  This project is licensed under the nroqw License
+  This project is licensed under the MIT License
 
   ## Contributing
 
-  boerq
+  none
 
   ## Tests
 
@@ -57,8 +57,8 @@
 
   <img src="https://avatars1.githubusercontent.com/u/59821631?v=4" alt="avatar" style="border-radius: 16px" width="30" />
 
-  ![License](https://img.shields.io/github/license/rehamilton/ieuwg?style=flat-square)
+  ![License](https://img.shields.io/github/license/rehamilton/README_Generator?style=flat-square)
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/rehamilton/ieuwg)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/rehamilton/README_Generator)
 
   
