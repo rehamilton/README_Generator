@@ -27,6 +27,10 @@ const questions = [
         name: "description"
     },
     {
+        message: "Installation Requirements",
+        name: "installation"
+    },
+    {
         message: "As a... (who is the project for?)",
         name: "role"
     },
@@ -37,6 +41,10 @@ const questions = [
     {
         message: "So that... (what is the user benefit?)",
         name: "benefit"
+    },
+    {
+        message: "License",
+        name: "license"
     },
     {
         message: "Contributing",
@@ -55,9 +63,6 @@ function promptUser() {
     .prompt(questions)
 };
 
-
-function writeToFile(markDown, data) {
-}
 
 async function init() {
 
